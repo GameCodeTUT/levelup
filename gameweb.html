@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="games.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <header>
+        <a href="#"class="logo">Gemtor</a>
+        <ul class="nav">
+            <li><a href="game.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="games"><a href="game.html">Games</a></li>
+            <li><a href="#">Tournment</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="search Games">
+            </div>
+        </div>
+        
+    </header>
+
+
+    
+ </body>
+ 
+ <script>
+    /*sticky navbar */
+    window.addEventListener('scroll',function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0 );
+    });
+
+</script>
+ </html>
